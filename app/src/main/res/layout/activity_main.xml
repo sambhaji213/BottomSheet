@@ -1,0 +1,99 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.bottomsheetbehavior.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_weight="1"
+            android:text="BottomSheetOne"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_weight="1"
+            android:text="BottomSheetTwo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomSheetOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_hideable="true"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPanel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_centerInParent="true"
+            android:text="BottomSheet 1"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPanel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_centerInParent="true"
+            android:text="BottomSheet 2"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPanel3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_centerInParent="true"
+            android:text="BottomSheet 3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomSheetTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_hideable="true"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPanel4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_centerInParent="true"
+            android:text="BottomSheet 1"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPanel5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_centerInParent="true"
+            android:text="BottomSheet 2"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPanel6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_centerInParent="true"
+            android:text="BottomSheet 3"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
